@@ -32,14 +32,15 @@ import mimetypes
 class MyWebServer(socketserver.BaseRequestHandler):
 
     headers = {
-        'Server' : 'CrudeServer',
+        'Server' : 'MyWebServer',
         'Content-Type' : 'text/html',
     }
 
     status_codes = {
         200: 'OK',
+        301: 'Redirected',
         404: 'Not Found',
-        501: 'Not Implemented',
+        405: 'Not Allowed',
     }
     
     def handle(self):
