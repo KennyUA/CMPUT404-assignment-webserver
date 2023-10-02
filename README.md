@@ -24,3 +24,8 @@ examples thus some of the code is Copyright © 2001-2013 Python
 Software Foundation; All Rights Reserved under the PSF license (GPL
 compatible) http://docs.python.org/2/library/socketserver.html
 
+server.py update contains sources from:
+*https://bhch.github.io/posts/2017/11/writing-an-http-server-from-scratch/
+
+Although the server type was different, I used the source above as a guideline, as well as the code for response_line, response_head, and a part of the handle function.
+
